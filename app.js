@@ -6,6 +6,9 @@ app.get('/', (req, res) => {
   res.send('Bienvenue sur l\'API Portfolio !');
 });
 
+const demoRouter = require('./routes/demo.routes');
+app.use('/projets', demoRouter);
+
 app.listen(PORT, () => {
   console.log(`Serveur démarré sur http://localhost:${PORT}`);
 });
