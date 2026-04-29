@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
   res.send('Bienvenue sur l\'API Portfolio !');
 });
 
-const demoRouter = require('./routes/demo.routes');
+const demoRouter = require('./routes/project/routes');
 app.use('/projets', demoRouter);
 
 app.listen(PORT, () => {
